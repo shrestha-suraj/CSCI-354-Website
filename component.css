@@ -1,0 +1,42 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+header{
+    border:solid red;
+    display:grid;
+    grid-template-rows: 80px 20px;
+    grid-template-columns: 100px 1fr;
+}
+
+nav{
+    border:solid blue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end:3;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.website-logo{
+    height: 100%;
+    border: solid yellow;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end:2;
+}
+.nav-tabs{
+    border:solid  black;
+    margin:0;
+    grid-column-start:2;
+    grid-column-end:3;
+}
+.nav-tabs li{
+    display: inline;
+}
+.nav-tabs li a{
+    text-decoration: none;
+    border:solid red;
+}
