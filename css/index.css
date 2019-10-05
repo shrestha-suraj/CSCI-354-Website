@@ -3,51 +3,79 @@
     padding:0;
 }
 body{
-    background-color:red;
+    margin:0;
+    padding:0;
+    width:100%;
 }
-header{
-    display:grid;
-    grid-template-columns:150px 1fr;
-    grid-template-rows:100px;
-    background-color:black;
-}
-nav{
-    display:table;
-    height: 100%;
-}
-
-.website-logo{
-    height:inherit;
-    width:100px;
-}
-.nav-tags{
-    list-style-type: none;
-    list-style-position: initial;
-    height:100%;
-    display:table-cell;
-    vertical-align: middle;
-}
-.nav-tags li{
-    display:inline;
-}
-.nav-tags li a{
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:2rem;
-    color:white;
-    padding:0px 10px 0px 10px;
-}
-.nav-tags li a:hover{
-    color:goldenrod;
-}
-.video-container{
+video{
     width: 100%;
     margin:0;
     text-align: center;
     background-color:black;
 
 }
-.video-container video{
-    width: 100%;
-    border-radius: 20px;
+/*Header CSS Starts from here*/
+header{
+    display:grid;
+    grid-template-rows: 80px 20px;
+    grid-template-columns: 100px 1fr;
 }
+
+nav{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end:3;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    background-color:black;
+}
+.website-logo{
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end:2;
+}
+.nav-tabs{
+    margin:0;
+    grid-column-start:2;
+    grid-column-end:3;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.nav-tabs li{
+    display: inline;
+    vertical-align: middle;
+    margin:0;
+}
+.nav-tabs li a{
+    text-decoration: none;
+    color:white;
+    margin:0px 15px 0px 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.5rem;
+    transition:all 0.10s ease;
+}
+.nav-tabs li a:hover{
+    color:goldenrod;
+    font-size:1.7rem;
+}
+.color-filler{
+    background-color:red;
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:3;
+}
+/*Header CSS Ends here*/
+
+/*Main-Container CSS Starts from here*/
+
+.main-container{
+    margin:0;
+    width:100%;
+}
+
+
+/*Main-Container CSS Ends here*/
