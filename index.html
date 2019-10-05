@@ -21,16 +21,26 @@
         <img class="website-logo" src="img/logo/website-logo.png" />
     </header>
     <div class="main-container">
-
-        <video width="900" height="500" src="videos/promo-video1.mp4" alt="car showroom promo video" controls></video>
-
+        <video height="500" src="videos/promo-video1.mp4" alt="car showroom promo video" controls></video>
+            <div class="search-container">
+                <form>
+                    <label for="make">Make: </label>
+                    <input type="text" id="make"/>
+                    <label for="year">Year: </label>
+                    <input type="number" id="year"/>
+                    <label for="model">Model: </label>
+                    <input type="text" id="model"/>
+                </form>
+            </div>
+        
     </div>
+
     <!--
 
 </div>
 <div
     <p>Here at Internet-Dealers we find the best match for your style.</p>
-    <h2>Seacrh Your Choice: </h2>
+    
     <form action="#.php">
         <label for="car-make">Make: </label><input type="text" minlength="0" size="30" />
         <label for="car-model">Mode: </label><input type="text" size="30" />

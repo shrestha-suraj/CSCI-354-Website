@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    background-color:red;
+}
+.main-container{
+    width:100%;
+    height:fit-content;
+}
+video{
+    margin:0;
+    width:100%;
+    background-color:black;
+}
+.search-container{
+    margin:0;
+    width:100%;
+    height:200px;
+    background-color:blue;
+}
+.redColor{
+    background-color:red;
+}

@@ -1,18 +1,17 @@
 *{
     margin:0;
     padding:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     margin:0;
     padding:0;
-    width:100%;
+    background-color:red;
 }
 video{
     width: 100%;
     margin:0;
-    text-align: center;
     background-color:black;
-
 }
 /*Header CSS Starts from here*/
 header{
@@ -75,6 +74,24 @@ nav{
 .main-container{
     margin:0;
     width:100%;
+}
+.search-container{
+    width:98%;
+    margin-right:auto;
+    margin-left:auto;
+    height:80px;
+    background-color:black;
+    color:white;
+    border-radius:20px;
+}
+form{
+    display:grid;
+    grid-template-rows:1fr 5fr 1fr;
+    grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 1fr; 
+    grid-template-areas:
+        "no no no no no no no"
+        "ya ya ya ya ya ya ya"
+        "no no no no no no no";
 }
 
 
