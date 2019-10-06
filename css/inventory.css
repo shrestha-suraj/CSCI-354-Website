@@ -1,0 +1,43 @@
+.body-container{
+    width:98%;
+    margin:auto;
+    border:solid black;
+    display:grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows:1fr;
+}
+.advanced-search-container{
+    background-color:black;
+    border-radius:20px;
+    height:fit-content;
+}
+label{
+    font-size:1.5rem;
+}
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+}
+select,input,option{
+    width: 90%;
+    color:black;
+    margin-bottom: 30px;
+    
+}
+
+.ads-div{
+    background-color:black;
+    overflow:hidden;
+}
+/*
+.image-container{
+    width:2100px;
+    height:500px;
+    position:relative;
+    transition:left 2s;
+    -webkit-transition:left 2s;
+    -moz-transition:left 2s;
+    -o-transfition:left 2s;
+}
+*/
