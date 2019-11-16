@@ -2,360 +2,221 @@
 <html>
 
 <head>
-    <title>Internet-Dealers</title>
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Internet Dealters</title>
+
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <link type="text/css" rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="nav-tabs">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/inventory.html">Inventory</a></li>
-                <li><a href="html/finance.html">Finance</a></li>
-                <li><a href="html/about.html">About</a></li>
-            </ul>
-        </nav>
-        <div class="color-filler"></div>
-        <img class="website-logo" src="img/logo/website-logo.png" />
-    </header>
-    <div class="main-container">
-        <video height="500" src="videos/promo-video1.mp4" alt="car showroom promo video" controls></video>
-        <div class="search-container">
-            <h2>Search Your Choice:</h2>
-            <form>
-                <label for="make">Make: </label>
-                <select id="make">
-                    <option></option>
-                    <option>Acura</option>
-                </select>
-                <label for="year">Year: </label>
-                <input type="number" id="year" />
-                <label for="model">Model: </label>
-                <input type="text" id="model" />
-                <input type="submit" id="submit" value="Search" />
-            </form>
-        </div>
-        <div class="recent-arrivals-wrapper">
-            <center>
-                <h1>New In The Inventory</h1>
-            </center>
-            <div class="new-inventory">
-                <div class="each-cell">
-                    <div class="car-cards">
-                        <figure><img src="img/cars/car1.png" alt="2016 Dodge Grand Carvana SE" />
-                            <center>
-                                <figcaption>2016 Dodge Grand Carvana SE</figcaption>
-                            </center>
-                        </figure>
-                        <br />
-                        <div class="details-div">
-                            <span>$15,900</span>
-                            <span>102K Miles</span>
-                        </div>
-                        <center><button class="buy-now-button">Buy Now</button></center>
-
-                    </div>
-
-                    <div class="car-cards">
-                        <figure><img src="img/cars/car2.png" alt="2018 Kia Optima LX" />
-                            <center>
-                                <figcaption>2018 Kia Optima LX</figcaption>
-                            </center>
-                        </figure>
-                        <br />
-                        <div class="details-div">
-                            <span>$20,900</span>
-                            <span>60K Miles</span>
-                        </div>
-                        <center><button class="buy-now-button">Buy Now</button></center>
-
-                    </div>
-
-                    <div class="car-cards">
-                        <figure><img src="img/cars/car3.png" alt="2016 Chevrolet Camaro LT" />
-                            <center>
-                                <figcaption>2016 Chevrolet Camaro LT</figcaption>
-                            </center>
-                        </figure>
-                        <br />
-                        <div class="details-div">
-                            <span>$23,998</span>
-                            <span>20K Miles</span>
-                        </div>
-                        <center><button class="buy-now-button">Buy Now</button></center>
-
-                    </div>
-                </div>
-
-                <!--Second Row-->
-
-                <div class="each-cell">
-                    <div class="car-cards">
-                        <figure><img src="img/cars/car4.png" alt="2018 Dodge Challenger" />
-                            <center>
-                                <figcaption>2018 Dodge Challenger</figcaption>
-                            </center>
-                        </figure>
-                        <br />
-                        <div class="details-div">
-                            <span>$39,998</span>
-                            <span>3K Miles</span>
-                        </div>
-                        <center><button class="buy-now-button">Buy Now</button></center>
-
-                    </div>
-
-                    <div class="car-cards">
-                        <figure><img src="img/cars/car5.png" alt="2014 Volkswagen Passet SE" />
-                            <center>
-                                <figcaption>2014 Volkswagen Passet SE</figcaption>
-                            </center>
-                        </figure>
-                        <br />
-                        <div class="details-div">
-                            <span>$5,900</span>
-                            <span>201K Miles</span>
-                        </div>
-                        <center><button class="buy-now-button">Buy Now</button></center>
-
-                    </div>
-
-                    <div class="car-cards">
-                        <figure><img src="img/cars/car6.png" alt="2017 Chrysler 200 LX" />
-                            <center>
-                                <figcaption>2017 Chrysler 200 LX</figcaption>
-                            </center>
-                        </figure>
-                        <br />
-                        <div class="details-div">
-                            <span>$19,999</span>
-                            <span>75K Miles</span>
-                        </div>
-                        <center><button class="buy-now-button">Buy Now</button></center>
-
-                    </div>
-                </div>
-                <!--Third Row-->
-                <div class="each-cell">
-                    <div class="car-cards">
-                        <figure><img src="img/cars/car7.png" alt="2015 Lexus CT 200h" />
-                            <center>
-                                <figcaption>2015 Lexus CT 200h</figcaption>
-                            </center>
-                        </figure>
-                        <br />
-                        <div class="details-div">
-                            <span>$17,900</span>
-                            <span>95K Miles</span>
-                        </div>
-                        <center><button class="buy-now-button">Buy Now</button></center>
-
-                    </div>
-
-                    <div class="car-cards">
-                        <figure><img src="img/cars/car8.png" alt="2018 Hyundai Accent" />
-                            <center>
-                                <figcaption>2018 Hyundai Accent</figcaption>
-                            </center>
-                        </figure>
-                        <br />
-                        <div class="details-div">
-                            <span>$16,000</span>
-                            <span>50K Miles</span>
-                        </div>
-                        <center><button class="buy-now-button">Buy Now</button></center>
-
-                    </div>
-
-                    <div class="car-cards">
-                        <figure><img src="img/cars/car9.png" alt="2016 Acura MDX" />
-                            <center>
-                                <figcaption>2016 Acura MDX</figcaption>
-                            </center>
-                        </figure>
-                        <br />
-                        <div class="details-div">
-                            <span>$11,900</span>
-                            <span>135K Miles</span>
-                        </div>
-                        <center><button class="buy-now-button">Buy Now</button></center>
-
-                    </div>
-                </div>
-
+        <!--Navigation Bar in Header-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#"><img src="img/logo/website-logo.png" id="logo" /></a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            <h5>Home</h5> <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/inventory.html">
+                            <h5>Inventory</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/finance.html">
+                            <h5>Finance</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/about.html">
+                            <h5>About</h5>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <br>
-        </div>
-
+        </nav>
+        <!--Navigation bar ends. Begin of the carousel-->
+    </header>
+    <div class="container-fluid bg-secondary">
+        <video class="promo-video" src="videos/promo-video1.mp4" alt="car showroom promo video" controls></video>
+    </div>
+    <div class="container-fluid bg-dark p-4 text-light">
+        <form>
+            <div class="form-row align-items-center">
+                <h4 class="col-sm-2 col-md-2 col-lg-2">Search Your Choice: </h4>
+                <select class="col-sm-12 col-md-2 col-lg-2 custom-select mr-sm-2 my-2" id="inlineFormCustomSelect">
+                    <option selected>Make</option>
+                    <option value="Audi">Adui</option>
+                    <option value="Ford">Ford</option>
+                    <option value="GMC">GMC</option>
+                </select>
+                <select class="col-sm-12 col-md-2 col-lg-2 custom-select mr-sm-2 my-2" id="inlineFormCustomSelect">
+                    <option selected>Model</option>
+                    <option value="Model A">Model A</option>
+                    <option value="Model B">Model B</option>
+                    <option value="Model C">Model C</option>
+                </select>
+                <select class="col-sm-12 col-md-2 col-lg-2 custom-select mr-sm-2 my-2" id="inlineFormCustomSelect">
+                    <option selected>Year</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                </select>
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
     </div>
 
-    <footer>
-        <div class="contact-us">
-            <center>
-                <h1>Follow Us:</h1>
-                <img class="follow-us-imgs" src="img/icons/fb-ic.png" />
-                <img class="follow-us-imgs" src="img/icons/instagram-ic.png" />
-                <img class="follow-us-imgs" src="img/icons/twitter-ic.png" />
-            </center>
+    <!--New in inventory catagory-->
+    <h1 class="text-center">New In The Inventory</h1>
+    <hr>
+
+    <div class="container row mx-auto align-items-center">
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car1.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2016 Dodge Grand Sarvana SE</h5>
+                    <p class="card-text">Price: $15,900<br>Miles: 102,000</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
         </div>
-        <div class="copyright-content">
-            <span>
-                    Internet Dealers Pvt. Ltd
-                    <br>
-                    Copyrigth (c) Internet Dealers Pvt. Ltd, All rights reserved.
-                    <br>
-                    Oxford, MS, USA
-                </span>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car2.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2018 Kia Optima LX</h5>
+                    <p class="card-text">Price: $20,900<br>Miles: 60,500</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
         </div>
-        <div class="news-letter-container">
-            <span>
-                <br>
-                <h2>Sign Up For NewsLetter:</h2>
-                <br>
-                <form>
-                    <input type="text" placeholder="youremail@example.com" id="email"/>
-                    <input type="submit" id="subscribe-button" value="Subscribe"/>
-                </form>
-                
-            </span>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car3.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2016 Chevrolet Camaro LT</h5>
+                    <p class="card-text">Price: $23,998<br>Miles: 20,500</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
         </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car4.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2018 Dodge Challenger</h5>
+                    <p class="card-text">Price: $39,900<br>Miles: 3,500</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car5.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2014 Volkswagen Passet SE</h5>
+                    <p class="card-text">Price: $5,900<br>Miles: 201,500</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car6.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2017 Crysler 200 LX</h5>
+                    <p class="card-text">Price: $19,900<br>Miles: 75,200</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car7.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2015 Lexus CT 200H</h5>
+                    <p class="card-text">Price: $17,900<br>Miles: 95,000</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car8.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2018 Hyundai Accent</h5>
+                    <p class="card-text">Price: $16,000<br>Miles: 50,000</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car9.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2016 Acura MDX</h5>
+                    <p class="card-text">Price: $11,900<br>Miles: 135,000</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End of New In Invenotry Tab-->
+
+    <!--Begin of Footer-->
+    <footer class="row bg-dark text-light">
+        <div class="col-lg-4 col-sm-12 col-md-4 container-fluid">
+            <h1 class="text-center">Follow Us:</h1>
+            <div class="row ml-auto mr-auto" id="social-media">
+                <img class="col-lg-4 col-md-4 col-sm-1 image-fluid" src="img/icons/fb-ic.png"/>
+                <img class="col-lg-4 col-md-4 col-sm-1 image-fluid" src="img/icons/instagram-ic.png"/>
+                <img class="col-lg-4 col-md-4 col-sm-1 image-fluid" src="img/icons/twitter-ic.png"/>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 container-fluid">
+                <p class="text-center botto text-bottom">Internet Dealers Pvt. Ltd<br>
+                    Copyrigth (c) Internet Dealers Pvt. Ltd, All rights reserved.<br/>
+                    Oxford, MS, USA</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12container-fluid">
+                    <h3>Sign Up For NewsLetter:</h3>
+                    <form class="form-inline">
+                            <div class="form-group mb-2">
+                              <label for="staticEmail2" class="sr-only">Email</label>
+                              <input type="text" class="form-control mr-2" id="staticEmail2" placeholder="email@example.com">  
+                            </div>
+                              
+                            <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+                          </form>
+                </div>
     </footer>
 
-    <!--
 
-</div>
-<div
-    <p>Here at Internet-Dealers we find the best match for your style.</p>
-    
-    <form action="#.php">
-        <label for="car-make">Make: </label><input type="text" minlength="0" size="30" />
-        <label for="car-model">Mode: </label><input type="text" size="30" />
-        <label for="car-year">Year: </label><select>
-            <option value=""></option>
-            <option value="2019">2019</option>
-            <option value="2019">2018</option>
-            <option value="2019">2017</option>
-            <option value="2019">2016</option>
-            <option value="2019">2015</option>
-            <option value="2019">2014</option>
-            <option value="2019">2013</option>
-            <option value="2019">2012</option>
-            <option value="2019">2011</option>
-            <option value="2019">2010</option>
-        </select>
-        <input type="submit" value="Search" />
-    </form>
-
-    <div>
-        <h1>Here are our latest models for sale.</h1>
-        <table>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car1.png" alt="2016 Dodge Grand Carvana SE" />
-                        <figcaption>2016 Dodge Grand Carvana SE</figcaption>
-                    </figure>
-                </td>
-                <td>2016 Dodge Grand Carvana SE
-                </td>
-                <td>$15,999+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car2.png" alt="2018 Kia Optima LX" />
-                        <figcaption>2018 Kia Optima LX</figcaption>
-                    </figure>
-                </td>
-                <td>2018 Kia Optima LX</td>
-                <td>$29,999+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car3.png" alt="2016 Chevrolet Camaro LT" />
-                        <figcaption>2016 Chevrolet Camaro LT</figcaption>
-                    </figure>
-                </td>
-                <td>2016 Chevrolet Camaro LT</td>
-                <td>$23,998+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car4.png" alt="2018 Dodge Challenger" />
-                        <figcaption>2018 Dodge Challenger</figcaption>
-                    </figure>
-                </td>
-                <td>2018 Dodge Challenger</td>
-                <td>$37,998+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car5.png" alt="2014 Volkswagen Passet SE" />
-                        <figcaption>2014 Volkswagen Passet SE</figcaption>
-                    </figure>
-                </td>
-                <td>2014 Volkswagen Passet SE</td>
-                <td>$14,599+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car6.png" alt="2017 Chrysler 200 LX" />
-                        <figcaption>2017 Chrysler 200 LX</figcaption>
-                    </figure>
-                </td>
-                <td>2017 Chrysler 200 LX</td>
-                <td>$19,999+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car7.png" alt="2015 Lexus CT 200h" />
-                        <figcaption>2015 Lexus CT 200h</figcaption>
-                    </figure>
-                </td>
-                <td>2015 Lexus CT 200h</td>
-                <td>$17,998+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car8.png" alt="2018 Hyundai Accent" />
-                        <figcaption>2018 Hyundai Accent</figcaption>
-                    </figure>
-                </td>
-                <td>2018 Hyundai Accent</td>
-                <td>$13,998+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car9.png" alt="2016 Acura MDX" />
-                        <figcaption>2016 Acura MDX</figcaption>
-                    </figure>
-                </td>
-                <td>2016 Acura MDX</td>
-                <td>$27,998+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <tr>
-                <td>
-                    <figure><img src="img/cars/car10.png" alt="2018 Nissan Versa SV" />
-                        <figcaption>2018 Nissan Versa SV</figcaption>
-                    </figure>
-                </td>
-                <td>2018 Nissan Versa SV</td>
-                <td>$11,999+tax</td>
-                <td><button>Buy Now</button></td>
-            </tr>
-        </table>
-    </div>
-    <h1>Lets hear what our cars have to say: <audio alt="car-music" src="audio/car-music.ogg" controls></audio></h1>
-    <footer>(C) Internet-Dealers Pvt. LTD</footer>-->
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 </html>

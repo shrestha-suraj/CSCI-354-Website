@@ -3,26 +3,116 @@
 
 <head>
     <title>Internet-Dealers</title>
-    <link href="../css/index.css" rel="stylesheet" type="text/css" />
-    <link href="../css/about.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link type="text/css" rel="stylesheet" href="../css/about.css" />-->
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="nav-tabs">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="inventory.html">Inventory</a></li>
-                <li><a href="finance.html">Finance</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-        <div class="color-filler"></div>
-        <img class="website-logo" src="../img/logo/website-logo.png" />
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="#"><img src="../img/logo/website-logo.png" id="logo" /></a>
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">
+                                    <h5>Home</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="inventory.html">
+                                    <h5>Inventory</h5> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="finance.html">
+                                    <h5>Finance</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="about.html"> 
+                                    <h5>About</h5> <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
     </header>
+    <div class="row bg-secondary">
+        <img class="col-sm-12 col-md-8 col-lg-8 image-fluid" src="../img/about-imgs/car1.png"/>
+        <div class="continer-fluid col-sm-12 col-md-4 col-lg-4">
+                <h2 class="text-danger">GET YOUR DREAM CAR NOW !!!</h2>
+                <span>
+                    <p class="text-light text-justify w-75"> 
+                        Too much hassle to go to a dealership, get followed by annoying agents
+                        wherever you go. Well, all of your problems are solved today. Browse from thousands of brands
+                        and models.
+                        Our prices are better than anyone in the market as we bring product directly to you. Thats
+                        right, no third
+                        parties come between us and customer to take a bite out of the cake. Seach from millions of car
+                        and get
+                        super deals on each. The cars are fully inspected and guranteed by our certified mechanics.
+                    </p>
+                </span>
+                <br>
+                <h1>Drive Away With No Regrets</h1>
+        </div>
+       <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <h1 class="text-danger">WHO WE ARE</h1>
+            <p class="text-light">Internet Dealership is an online company that fully operates on the internet.
+                <br>
+                Our goal is to make things easy for people who want to get a car and live the dream.<br>
+                We are connected with all the car manufacturer in and outside USA. Every car we have is new and comes 
+                directly to you.
+            </p>
+       </div>
+       <div class="mx-auto mb-4">
+           <div class="row">
+            <img class="col-sm-3 col-md-3 col-lg-3 mx-auto" src="../img/about-imgs/staff.png"/>
+            <img class="col-sm-3 col-md-3 col-lg-3 mx-auto" src="../img/about-imgs/staff.png"/>
+            <img class="col-sm-3 col-md-3 col-lg-3 mx-auto" src="../img/about-imgs/staff.png"/>
+            <img class="col-sm-3 col-md-3 col-lg-3 mx-auto" src="../img/about-imgs/staff.png"/>
+        </div>
+        </div>
+    </div>
+
+    <footer class="row bg-dark text-light">
+            <div class="col-lg-4 col-sm-12 col-md-4 container-fluid">
+                <h1 class="text-center">Follow Us:</h1>
+                <div class="row ml-auto mr-auto" id="social-media">
+                    <img class="col-lg-4 col-md-4 col-sm-1 image-fluid" src="../img/icons/fb-ic.png"/>
+                    <img class="col-lg-4 col-md-4 col-sm-1 image-fluid" src="../img/icons/instagram-ic.png"/>
+                    <img class="col-lg-4 col-md-4 col-sm-1 image-fluid" src="../img/icons/twitter-ic.png"/>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 container-fluid">
+                    <p class="text-center botto text-bottom">Internet Dealers Pvt. Ltd<br>
+                        Copyrigth (c) Internet Dealers Pvt. Ltd, All rights reserved.<br/>
+                        Oxford, MS, USA</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12container-fluid">
+                        <h3>Sign Up For NewsLetter:</h3>
+                        <form class="form-inline">
+                                <div class="form-group mb-2">
+                                  <label for="staticEmail2" class="sr-only">Email</label>
+                                  <input type="text" class="form-control mr-2" id="staticEmail2" placeholder="email@example.com">  
+                                </div>
+                                  
+                                <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+                              </form>
+                    </div>
+        </footer>
+    <!--
     <main>
         <div class="about-content1">
-            <img class="carimg" src="../img/about-imgs/car1demo.png" />
+            
             <article>
                 <h1>GET YOUR DREAM CAR NOW !!!</h1>
                 <br>
@@ -96,7 +186,7 @@
             </div>
         </footer>
 
-    </div>
+    </div>-->
 </body>
 
 </html>
