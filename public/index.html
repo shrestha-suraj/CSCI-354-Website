@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internet Dealters</title>
+
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.16.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.16.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.16.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.16.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.16.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+        <link type="text/css" rel="stylesheet" href="css/index.css" />
+        <link type="text/css" rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <!--Navigation Bar in Header-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#"><img src="img/logo/website-logo.png" id="logo" /></a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            <h5>Home</h5> <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/inventory.html">
+                            <h5>Inventory</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/finance.html">
+                            <h5>Finance</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/about.html">
+                            <h5>About</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Navigation bar ends. Begin of the carousel-->
+    </header>
+    <div class="container-fluid bg-secondary">
+        <video class="promo-video" src="videos/promo-video1.mp4" alt="car showroom promo video" controls></video>
+    </div>
+    <div class="container-fluid bg-dark p-4 text-light">
+        <form>
+            <div class="form-row align-items-center">
+                <h4 class="col-sm-2 col-md-2 col-lg-2">Search Your Choice: </h4>
+                <select class="col-sm-12 col-md-2 col-lg-2 custom-select mr-sm-2 my-2" id="inlineFormCustomSelect">
+                    <option selected>Make</option>
+                    <option value="Audi">Adui</option>
+                    <option value="Ford">Ford</option>
+                    <option value="GMC">GMC</option>
+                </select>
+                <select class="col-sm-12 col-md-2 col-lg-2 custom-select mr-sm-2 my-2" id="inlineFormCustomSelect">
+                    <option selected>Model</option>
+                    <option value="Model A">Model A</option>
+                    <option value="Model B">Model B</option>
+                    <option value="Model C">Model C</option>
+                </select>
+                <select class="col-sm-12 col-md-2 col-lg-2 custom-select mr-sm-2 my-2" id="inlineFormCustomSelect">
+                    <option selected>Year</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                </select>
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--New in inventory catagory-->
+    <h1 class="text-center">New In The Inventory</h1>
+    <hr>
+
+    <div class="container row mx-auto align-items-center">
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car1.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2016 Dodge Grand Sarvana SE</h5>
+                    <p class="card-text">Price: $15,900<br>Miles: 102,000</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car2.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2018 Kia Optima LX</h5>
+                    <p class="card-text">Price: $20,900<br>Miles: 60,500</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car3.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2016 Chevrolet Camaro LT</h5>
+                    <p class="card-text">Price: $23,998<br>Miles: 20,500</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car4.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2018 Dodge Challenger</h5>
+                    <p class="card-text">Price: $39,900<br>Miles: 3,500</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car5.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2014 Volkswagen Passet SE</h5>
+                    <p class="card-text">Price: $5,900<br>Miles: 201,500</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car6.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2017 Crysler 200 LX</h5>
+                    <p class="card-text">Price: $19,900<br>Miles: 75,200</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car7.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2015 Lexus CT 200H</h5>
+                    <p class="card-text">Price: $17,900<br>Miles: 95,000</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car8.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2018 Hyundai Accent</h5>
+                    <p class="card-text">Price: $16,000<br>Miles: 50,000</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-2">
+            <div class="card" style="width:18rem;">
+                <img src="img/cars/car9.png" class="image-fluid card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">2016 Acura MDX</h5>
+                    <p class="card-text">Price: $11,900<br>Miles: 135,000</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End of New In Invenotry Tab-->
+
+    <!--Begin of Footer-->
+    <footer class="row bg-dark text-light">
+        <div class="col-lg-4 col-sm-12 col-md-4 container-fluid">
+            <h1 class="text-center">Follow Us:</h1>
+            <div class="row ml-auto mr-auto" id="social-media">
+                <img class="col-lg-4 col-md-4 col-sm-1 image-fluid" src="img/icons/fb-ic.png" />
+                <img class="col-lg-4 col-md-4 col-sm-1 image-fluid" src="img/icons/instagram-ic.png" />
+                <img class="col-lg-4 col-md-4 col-sm-1 image-fluid" src="img/icons/twitter-ic.png" />
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 container-fluid">
+            <p class="text-center botto text-bottom">Internet Dealers Pvt. Ltd<br>
+                Copyrigth (c) Internet Dealers Pvt. Ltd, All rights reserved.<br />
+                Oxford, MS, USA</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12container-fluid">
+            <h3>Sign Up For NewsLetter:</h3>
+            <form class="form-inline">
+                <div class="form-group mb-2">
+                    <label for="staticEmail2" class="sr-only">Email</label>
+                    <input type="text" class="form-control mr-2" id="staticEmail2" placeholder="email@example.com">
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

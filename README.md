@@ -1,10 +1,5 @@
 # Car-Dealership
 
-## This Website I created was a part of a Class Final Project.
-## The website I created is an online car dealership as much like Amazon or eBay for other products.
-## The website is front-end functional and doesnot have backed code yet.
-## However, firebase has been used to authenticate users and also get data from firestore.
-## You can visit the website demo by clicking the link on the gihub page.
+The project is a sample car dealership website that has all the necessity modules for the front-end UI. The project has been created using HTML5, CSS3, Javascript and Firebase. The UI is divided into multiple parts with all the UI completed. The data is mocked by using html data for design purpose only.
 
-# Technologies Used
-## HTML, CSS, Vanilla JS, Firebase and Firestore
+### Deployed URL
